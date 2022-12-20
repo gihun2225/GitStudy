@@ -23,4 +23,18 @@ int main()
 	printf(" %d", num2);
 	int ans;
 	scanf("%d", ans);
+	int res;
+	switch (ch)
+	{
+	case 0:
+		res = num1 + num2;
+	case 1:
+		res = num1 - num2;
+	case 2:
+		res = num1 * num2;
+	case 3:
+		res = num1 / num2;
+	}
+	if (ans == res)
+		printf("정답입니다.");
 }
